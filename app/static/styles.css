@@ -1,0 +1,16 @@
+.image-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-item {   
+   margin-right: 1cm; 
+   height: auto;
+   width: auto; 
+}
+
+.image-item img {
+   height: 300px;
+   width: auto;  
+}
+    

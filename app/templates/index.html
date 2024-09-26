@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Quantization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+
+<body>
+    <h1>Color Quantization</h1>
+
+    <form id="ncol-form" method="POST">
+
+        <label for="original_image">Choose an image:</label>
+        <select id="original_image" name="original_image" onchange="submitForm()">
+            {% for image_file in image_files %}
+                <option value="{{ image_file }}" {% if original_image == image_file %} selected {% endif %}>{{ image_file }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+
+
+        <label for="ncol">Select number of colors (1 to 5):</label>
+        <input type="range" id="ncol" name="ncol" min="1" max="5" value="{{ ncol }}"
+               oninput="this.nextElementSibling.value = this.value; submitForm()">
+        <output>{{ ncol }}</output>
+
+    </form>
+
+
+
+    {% if clustered_image %}
+
+    <div class="image-container">
+
+        <div class="image-item">
+            <h2>Original image</h2>
+            <img src="{{ url_for('get_image', filename=original_image) }}">
+        </div>
+
+        <div class="image-item">
+            <h2>Clustered Image</h2>
+            <img src="{{ url_for('get_image', filename=clustered_image) }}">
+        </div>
+
+    </div>
+
+    {% endif %}
+
+</body>
+</html>
