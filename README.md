@@ -4,7 +4,7 @@
 
 ## What is it?
 
-**ColorQuantization** is a simple Python web application which reduces the number of colors in 20 different pictures of [Ishihara tests]("https://en.wikipedia.org/wiki/Ishihara_test"). 
+**ColorQuantization** is a simple Python web application which reduces the number of colors in 20 different pictures of [Ishihara tests](https://en.wikipedia.org/wiki/Ishihara_test). 
 
 The Ishihara tests are colored vision tests using specially colored pictures to diagnose color blindness. Color blind people (4.5% of the population) perceive colors differently than those with normal color vision and it is harder for them to differentiate between colors.
 
