@@ -33,6 +33,7 @@ Create the virtual environment
 
 ```sh
 python -m venv myenv
+# Probably "python3 -m venv myenv" for Linux
 ```
 
 Activate the virtual environment and install the required packages:
