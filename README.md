@@ -14,8 +14,11 @@ The web app attempts to reduce the numbers of colors in 20 such pictures and use
 
 ![ColorQuantization](data/images/colquant.gif)
 
+## Demo
 
-## How to install
+You can try the app [here](https://colorquantization.azurewebsites.net/).
+
+## Installation
 
 Download the zipped [file](https://github.com/ipanagoulias/ColorQuantization/archive/refs/heads/main.zip) from GitHub and extract to a folder (e.g. Documents). Then navigate to the folder:
 
