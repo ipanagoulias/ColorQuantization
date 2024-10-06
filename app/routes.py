@@ -8,6 +8,7 @@ def index():
 
     images_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'images'))
     image_files = [f for f in os.listdir(images_folder) if f.startswith('image') and f.endswith('.jpg')]
+    image_files = sorted(image_files)
     original_image = image_files[0]
     ncol = 1
     clustered_image = mykmeans(ncol, original_image)
