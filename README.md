@@ -17,7 +17,7 @@ The web app attempts to reduce the numbers of colors in 20 such pictures and use
 
 ## How to install
 
-Download the zipped file from GitHub and extract to a folder (e.g. Documents). Then navigate to the folder:
+Download the zipped [file](https://github.com/ipanagoulias/ColorQuantization/archive/refs/heads/main.zip) from GitHub and extract to a folder (e.g. Documents). Then navigate to the folder:
 
 ```sh
 cd Documents\ColorQuantization
